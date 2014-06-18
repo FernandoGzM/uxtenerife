@@ -6,6 +6,8 @@
 @orange: #ffbb33;
 @green: #99cc00;
 
+@background-big: "../img/background.jpg";
+
 
 .jumbotron {
   padding-top: 50px;
@@ -14,7 +16,22 @@
 
 body {
   background-color: @blue;
+  
   color: #fff;
+  @media (min-width: @screen-lg-min) {
+    background-image: url(@background-big);
+  }
+
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    background-color: @dark-blue; 
+  }
+
+  @media (max-width: @screen-sm-max) {
+    margin-bottom: 20px;
+    background-color: @green;
+  } 
+
+
 }
 
 
@@ -33,4 +50,11 @@ body {
   	margin-bottom: 20px;
   	background-color: @green;
   } 
+
+
 }
+
+.navbar {
+    background-color:transparent;
+    border:none;
+  }
