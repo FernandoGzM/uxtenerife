@@ -5778,26 +5778,30 @@ button.close {
 }
 body {
   background-color: #33b5e5;
+  border: none;
   color: #fff;
 }
 @media (min-width: 1200px) {
   body {
-    background-image: url("../img/background.jpg");
+    background: url("../img/1800fondo.png") no-repeat center center fixed;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   body {
     background-color: #0099cc;
+    background: url("../img/1800fondo.png") no-repeat center center fixed;
   }
 }
 @media (max-width: 991px) {
   body {
     margin-bottom: 20px;
     background-color: #99cc00;
+    background: url("../img/background1.png") no-repeat center center fixed;
   }
 }
 .marketing-box {
   padding: 10px;
+  padding-bottom: 70px;
   border-radius: 5px;
 }
 @media (min-width: 1200px) {
@@ -5816,7 +5820,32 @@ body {
     background-color: #99cc00;
   }
 }
-.navbar {
-  background-color: transparent;
+.jumbotron {
+  position: fixed;
+  bottom: 90px;
+  right: 5px;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar-fixed-top {
   border: none;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-fixed-bottom {
+  border: none;
+  height: 1em;
+}
+.bg-primary {
+  background-color: transparent;
+}
+.forma-background {
+  background: url("../img/formasbase.png") center center fixed;
+  background-size: 100%;
+}
+.body2 {
+  background: url("../img/landing2.png") no-repeat center center fixed;
+}
+.naranja {
+  color: orange;
 }

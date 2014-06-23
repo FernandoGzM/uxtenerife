@@ -6,29 +6,42 @@
 @orange: #ffbb33;
 @green: #99cc00;
 
-@background-big: "../img/background.jpg";
+@background-big: "../img/1800fondo.png";
+@background-medium: "../img/1800fondo.png";
+@background-small: "../img/background1.png";
+@background-forma: "../img/formasbase.png";
+
+@background-dos: "../img/landing2.png";
+
 
 
 .jumbotron {
   padding-top: 50px;
   background-color: transparent;
+
 }
 
 body {
   background-color: @blue;
+  border: none;
   
   color: #fff;
   @media (min-width: @screen-lg-min) {
-    background-image: url(@background-big);
+    background: url(@background-big) no-repeat center center fixed;
+
   }
 
   @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
     background-color: @dark-blue; 
+    background: url(@background-medium) no-repeat center center fixed;
+
   }
 
   @media (max-width: @screen-sm-max) {
     margin-bottom: 20px;
     background-color: @green;
+    background: url(@background-small) no-repeat center center fixed;
+
   } 
 
 
@@ -37,6 +50,7 @@ body {
 
 .marketing-box {
   padding: 10px;
+  padding-bottom: 70px; 
   border-radius: 5px;
 
   // Media queries for different behaviors of this element on different resolutions.
@@ -54,7 +68,43 @@ body {
 
 }
 
-.navbar {
-    background-color:transparent;
+
+.jumbotron {
+      position: fixed;
+    bottom: 90px;
+    right: 5px;
+    text-align: right;
+    background-color:rgba(0, 0, 0, 0.5);
+
+}
+.navbar-fixed-top {
     border:none;
+    height: 100px;
+    background-color:rgba(255, 255, 255, 0.5);
   }
+
+  .navbar-fixed-top .navbar-inner {
+    
+  }
+
+  .navbar-fixed-bottom {
+    border:none;
+    height:1em;
+  }
+
+  .bg-primary {
+    background-color: transparent;
+  }
+
+  .forma-background {
+    background: url(@background-forma)  center center fixed ;
+    background-size: 100%;
+}
+
+.body2 {
+  background: url(@background-dos) no-repeat center center fixed;
+}
+
+.naranja {
+  color:orange;
+}
